@@ -47,12 +47,12 @@ def get_recommendations(title, cosine_sim=cosine_sim):
     matched_title = get_closest_match(title)
     if not matched_title:
         return f"'{title}' not found in the dataset."
-
+    
     idx = indices[matched_title]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:11]  # Top 10 recommendations
     movie_indices = [i[0] for i in sim_scores]
-
+    
     return df_chunk["title"].iloc[movie_indices]
 
 # Example usage
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     print("AI Movie Recommender System")
     user_input = input("Enter a movie title: ")
     recommendations = get_recommendations(user_input)
-
+    
     print("\nTop 10 Recommendations:\n")
     if isinstance(recommendations, str):
         print(recommendations)
@@ -100,20 +100,20 @@ def get_recommendations(title, cosine_sim=cosine_sim):
     matched_title = get_closest_match(title)
     if not matched_title:
         return f"'{title}' not found in the dataset."
-
+    
     idx = indices[matched_title]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:11]  # Top 10 recommendations
     movie_indices = [i[0] for i in sim_scores]
-
+    
     return df_chunk["title"].iloc[movie_indices]
 
 # Example usage
-if __name__ == "_main_":
+if _name_ == "_main_":
     print("AI Movie Recommender System")
     user_input = input("Enter a movie title: ")
     recommendations = get_recommendations(user_input)
-
+    
     print("\nTop 10 Recommendations:\n")
     if isinstance(recommendations, str):
         print(recommendations)

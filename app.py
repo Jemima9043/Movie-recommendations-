@@ -1,11 +1,11 @@
 import pandas as pd
-import TfidfVectorizer
-import linear_kernel
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
 import difflib
 
 import pandas as pd
-import TfidfVectorizer
-import linear_kernel
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
 import difflib
 
 # Load a manageable subset of the dataset

@@ -1,2 +1,7 @@
 streamlit
 streamlit_option_menu
+scikit-learn
+pandas
+TfidfVectorizer
+linear_kernel
+difflib

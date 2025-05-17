@@ -1,6 +1,5 @@
 streamlit
 scikit-learn
 pandas
-TfidfVectorizer
 linear_kernel
 difflib

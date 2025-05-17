@@ -1,6 +1,5 @@
 streamlit
 scikit-learn
-streamlit_option_menu
 pandas
 TfidfVectorizer
 linear_kernel

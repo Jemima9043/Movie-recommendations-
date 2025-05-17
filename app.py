@@ -9,8 +9,8 @@ from sklearn.metrics.pairwise import linear_kernel
 import difflib
 
 # Load a manageable subset of the dataset
-from google.colab import files
-uploaded = files.upload()
+#from google.colab import files
+#uploaded = files.upload()
 chunk_size = 1000
 df_chunk = pd.read_csv("movies (1).csv", nrows=chunk_size)
 # Basic preprocessing: clean and combine relevant features
